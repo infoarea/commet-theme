@@ -1,0 +1,56 @@
+
+
+ <div class="d-flex m-5 justify-content-center admin_panel">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab">
+      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home">Home Page</button>
+      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" >Profile</button>
+      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages">Messages</button>
+      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings">Settings</button>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="v-pills-home">
+
+        <div class="container slider-container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+
+                  <form action="/comet/admin" method="POST" enctype="multipart/form-data">
+
+                    <div class="my-3">
+                      <label for="">Title</label>
+                      <input name="title" class="form-control" type="text">
+                    </div>
+                    
+                    <div class="my-3">
+                      <label for="">Subtitle</label>
+                      <input name="subtitle" class="form-control" type="text">
+                    </div>
+
+                    <div class="my-3">
+                      <label for="">Slider Image</label>
+                      <br>
+                      <br>
+                      <input name="slide_image" type="file">
+                    </div>
+
+                    
+                    <div class="my-3">
+                      <input class="w-100 btn btn-primary" value="submit" type="submit">
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-profile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur eveniet nemo nisi libero modi expedita recusandae, esse velit laboriosam.</div>
+      <div class="tab-pane fade" id="v-pills-messages">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur eveniet nemo nisi libero modi expedita recusandae, esse velit laboriosam.</div>
+      <div class="tab-pane fade" id="v-pills-settings">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur eveniet nemo nisi libero modi expedita recusandae, esse velit laboriosam.</div>
+    </div>
+  </div>
